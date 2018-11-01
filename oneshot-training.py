@@ -1,3 +1,4 @@
+
 # coding: utf-8
 
 # In[1]:
@@ -119,3 +120,4 @@ checkpoint = ModelCheckpoint(filepath, monitor='loss', verbose=1, save_best_only
 callbacks_list = [checkpoint]
 
 network.fit([train_left_input,train_right_input],train_output,epochs=20,callbacks=callbacks_list)
+
